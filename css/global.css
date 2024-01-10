@@ -257,11 +257,6 @@ ul {
   gap: 28px;
   margin-left: 40px;
 }
-@media (min-width: 360px) {
-  #navbar .icons {
-    display: none;
-  }
-}
 #navbar .icons a {
   display: -webkit-box;
   display: -ms-flexbox;
