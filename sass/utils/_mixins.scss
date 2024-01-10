@@ -1,0 +1,43 @@
+@use "../utils/variables" as var;
+
+@mixin btn(
+  $padding: 24px 64px,
+  $bg-color: var.$primary-color,
+  $color: var.$black-color
+) {
+  display: inline-block;
+  padding: 16px 48px;
+  border-radius: 12px;
+  border: 0;
+  transition: 0.5s;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  background-color:#fcd980 ;
+  color: #1b1c2a;
+  &:hover {
+    background-color: #fde4a6;
+    @content;
+  }
+}
+
+@mixin title($size, $height, $spacing: 0) {
+  font-size: $size + px;
+  font-weight: 700;
+  line-height: $height + px;
+  letter-spacing: $spacing + px;
+  text-transform: uppercase;
+}
+
+@mixin header($bottom: 64) {
+  margin-bottom: $bottom + px;
+  text-align: center;
+  h6 {
+    @extend %title-6;
+    margin-bottom: 16px;
+  }
+  h2 {
+    @extend %title-2;
+  }
+  @content;
+}

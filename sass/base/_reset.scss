@@ -1,0 +1,118 @@
+@use "../utils/variables" as var;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Rubik;
+}
+
+*,
+*::after,
+*::before {
+box-sizing: border-box;
+color: #282938;
+}
+html{
+  scroll-behavior: smooth;
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+#mode-btn {
+  border: none;
+  background-color: transparent;
+}
+
+.mode__img {
+  width: 30px;
+  height: 30px;
+}
+
+#navbar-responsive {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  gap: 50px;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #F5F2F0;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.navbar__toogle__item {
+  padding: 15px 30px;
+  width: 200px;
+  text-align: center;
+  border-radius: 10px;
+  font-family: Manrope;
+  background-color: #FFD2A4;
+  transition: 0.5s;
+}
+
+.navbar__toogle__item:hover {
+  box-shadow: 0px 0px 5px 5px #161722;
+}
+
+#navbar-open {
+  border: none;
+  background-color: transparent;
+
+  @media(min-width:1300px) {
+    display: none;
+  }
+
+  .navbar__img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+#navbar-close {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+#backtop{
+  border-radius: 12px;
+  z-index: 99;
+  border: none;
+  position: fixed;
+  outline: none;
+  right: 20px;
+  bottom: -70px;
+  background-color:#FFD2A4;
+  transition: 0.5s;
+  img{
+    margin: 15px 10px;
+    width: 30px;
+    height: 30px;
+  }
+}
+#backtop.backtop-show{
+  bottom:50px
+}
+
