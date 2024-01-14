@@ -183,7 +183,7 @@ color: #606060;
 padding-top: 70px;
 display: grid;
 grid-template-columns: repeat(4, 1fr);
-margin-left: 50px;
+margin-left: 80px;
 margin-right: 50px;
 .product__card{
 width: 272px;
@@ -578,13 +578,17 @@ margin-right: 28px;
 .product__cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 50px;
-        margin-left: 150px;
+        gap:   250px;
+
+        margin-left: 250px;
     }
 
     .title {
         gap: 50px;
         margin-left: 150px;
+    }
+    .footer{
+    background-size: 1500px;
     }
 }
 
@@ -598,6 +602,17 @@ margin-left: 150px;
 .title{
 gap: 50px;
 margin-left: 150px;
+}
+.card__boxes{
+display: flex;
+flex-direction: column;
+.footer__logo{
+display: flex;
+justify-content: start;
+}
+}
+footer{
+width: 650px;
 }
 .icons{
 display: none;
