@@ -598,6 +598,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .parent {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
