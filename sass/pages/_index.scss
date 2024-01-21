@@ -179,6 +179,12 @@ align-items: center;
 color: #606060;
 }
 }
+.catalog{
+a{
+display: flex;
+gap: 5px;
+}
+}
 .product__cards{
 padding-top: 70px;
 display: grid;

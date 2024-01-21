@@ -154,7 +154,12 @@
         color: #414141;
     }
 }
-
+.catalog {
+    a {
+        display: flex;
+        gap: 5px;
+    }
+}
 body {
     padding-bottom: 50px;
 }

@@ -280,7 +280,11 @@
     max-height: 100%;
     object-fit: cover;
 }
-
+.catalog{
+a{
+display: flex;
+}
+}
 .button1 {
     position: absolute;
     top: 8px;
