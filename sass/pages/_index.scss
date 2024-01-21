@@ -213,7 +213,10 @@ display: flex;
 box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.10);
 }
 .sell{
+
 h1 {
+position: relative;
+    right: 80px;
 font-family: Rubik;
 font-size: 18px;
 font-style: normal;
@@ -222,6 +225,8 @@ line-height: 150%;
 color: #414141;
 
         p {
+position: relative;
+    right: 80px;
 color: #BFBFBF;
 font-family: Rubik;
 font-size: 12px;
@@ -232,7 +237,10 @@ align-self: stretch;
         }
 }};
 .sold{
-    h3 {
+    h2
+ {
+position: relative;
+    right: 40px;
 align-self: stretch;
 color: var(--Main-onSurface, #414141);
 font-family: Rubik;
@@ -242,6 +250,8 @@ font-weight: 400;
 line-height: 150%;
     }
 h4 {
+position: relative;
+    right: 40px;
 color: #BFBFBF;
 font-family: Rubik;
 font-size: 14px;
@@ -575,14 +585,32 @@ margin-right: 28px;
 // }
 
 @media (max-width: 768px) {
+body{
+overflow-x: hidden;
+}
 .product__cards {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap:   250px;
-
-        margin-left: 250px;
+        position: relative;
+        right: 25px;
+     
     }
-
+    .title{
+    position: relative;
+    right: 100px;    
+    }
+    .hero{
+    display: flex;
+    flex-direction: column;
+    }
+    .card__boxes, .last__cards{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    // right: 50px;
+    padding: 20px;
+    }
     .title {
         gap: 50px;
         margin-left: 150px;
