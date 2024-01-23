@@ -35,15 +35,15 @@
               />
             </div>
             <div class="icons">
-              <a href="./pages/selected.html"
+              <a href="selected.html"
                 ><img src="../assets/images/like.svg" alt="icon" />
                 <p>Избранное</p></a
               >
-              <a href="./pages/products.html"
+              <a href="category.html"
                 ><img src="../assets/images/box.svg" alt="icon" />
                 <p>продукты</p></a
               >
-              <a href="./pages/korzinka.html"
+              <a href="korzinka.html"
                 ><img src="../assets/images/shopping-cart.svg" alt="icon" />
                 <p>Корзина</p></a
               >
@@ -231,11 +231,14 @@
                   />
 
                   <div class="button3">
-                    <img
-                      class="feather-icon-heart"
-                      alt=""
-                      src="../assets/images/heart_6521659.png"
-                    />
+                    <div class="like-container">
+                      <img
+                        id="likeImage"
+                        class="like-image feather-icon-heart"
+                        src="../assets/images/heart_6521659.png"
+                        alt="Like Icon"
+                      />
+                    </div>
                   </div>
                 </div>
                 <div class="content">
@@ -289,11 +292,14 @@
                   />
 
                   <div class="button3">
-                    <img
-                      class="feather-icon-heart"
-                      alt=""
-                      src="../assets/images/heart_6521659.png"
-                    />
+                      <div class="like-container">
+                      <img
+                        id="likeImage"
+                        class="like-image feather-icon-heart"
+                        src="../assets/images/heart_6521659.png"
+                        alt="Like Icon"
+                      />
+                    </div>
                   </div>
                 </div>
                 <div class="content">
@@ -349,11 +355,14 @@
                   />
 
                   <div class="button3">
-                    <img
-                      class="feather-icon-heart"
-                      alt=""
-                      src="../assets/images/heart_6521659.png"
-                    />
+                      <div class="like-container">
+                      <img
+                        id="likeImage"
+                        class="like-image feather-icon-heart"
+                        src="../assets/images/heart_6521659.png"
+                        alt="Like Icon"
+                      />
+                    </div>
                   </div>
                 </div>
                 <div class="content">
@@ -814,5 +823,17 @@
         </div>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var likeImage = document.getElementById("likeImage");
+
+        likeImage.addEventListener("click", function () {
+          likeImage.classList.toggle("clicked");
+          likeImage.src = likeImage.classList.contains("clicked")
+            ? "../assets/images/heart_833472.png"
+            : "../assets/images/heart_6521659.png";
+        });
+      });
+    </script>
   </body>
 </html>
