@@ -820,6 +820,9 @@ padding: 20px;
 }
 
 @media (max-width: 360px) {
+body{
+overflow-x: hidden;
+}
 .product__cards{
 display: grid;
 grid-template-columns: repeat(1, 1fr);
