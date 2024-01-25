@@ -1221,6 +1221,15 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .card__box1, .card__box2 {
+    width: 250px;
+    padding: 4px 25px 4px 15px;
+    position: relative;
+    right: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .card__boxes, .last__cards {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1286,7 +1295,6 @@ footer {
   .header__bottom {
     display: block;
     position: fixed;
-    z-index: 9999999;
     bottom: 0;
   }
   .header__bottom .mainmenu {
