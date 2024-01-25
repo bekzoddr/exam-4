@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="./css/global.min.css" />
   </head>
   <body>
+    <button class="backtop">
+      <img src="assets/images/arrow-removebg-preview.png" alt="" />
+    </button>
+
+    <div class="loading">
+      <div class="loader">
+        <span>Loading...</span>
+      </div>
+    </div>
+    <!-- <div class="loading">...Loading</div> -->
+
     <header>
       <div class="responsive__header">
         <a href="#" class="header__logo">
@@ -29,10 +40,10 @@
               <img src="./assets/images/logo.png" alt="logo" />
             </a>
             <div class="catalog">
-              <a href="pages/category.html"
-                ><img src="./assets/images/menu.svg" alt="menu" />
-                <h1>Каталог</h1></a
-              >
+              <button id="myButton">
+                <img src="./assets/images/menu.svg" alt="menu" />
+              </button>
+              <a href="pages/category.html"> <h1>Каталог</h1> </a>
             </div>
             <div class="search__container">
               <input
@@ -68,10 +79,38 @@
           </ul>
         </nav>
       </div>
+      <div class="dropdown-hidden" id="categoriess">
+        <div class="frame-parent">
+          <div class="item-parent">
+            <b class="item">Молоко, сыр, яйцо</b>
+            <b class="item">Хлеб</b>
+            <b class="item">Фрукты и овощи</b>
+            <b class="item">Замороженные продукты</b>
+          </div>
+          <div class="item-parent">
+            <b class="item">Напитки</b>
+            <b class="item">Кондитерские изделия</b>
+            <b class="item">Чай, кофе</b>
+          </div>
+          <div class="item-parent">
+            <b class="item">Бакалея</b>
+            <b class="item">Здоровое питание</b>
+            <b class="item">Зоотовары</b>
+          </div>
+          <div class="item-parent">
+            <b class="item">Непродовольственные товары</b>
+            <b class="item">Детское питание</b>
+            <b class="item">Мясо, птица, колбаса</b>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="container"> -->
       <div class="hero">
         <img src="./assets/images/hero.img" alt="" />
         <h1>Доставка бесплатно от 1000 ₽</h1>
       </div>
+
+      <!-- </div> -->
     </header>
     <main>
       <section id="cards">
@@ -476,22 +515,63 @@
           <div class="title title2">
             <h1>Наши магазины</h1>
           </div>
-          <div class="select">
-            <button>п.Щельяюр</button>
-            <button>д.Вертеп</button>
-            <button>с.Краснобор</button>
-            <button>д.Диюр</button>
+          <div class="container">
+            <div class="tab">
+              <div class="tab-buttons">
+                <button>п.Щельяюр</button>
+                <button>д.Вертеп</button>
+                <button>с.Краснобор</button>
+                <button>д.Диюр</button>
+              </div>
+            </div>
+            <div class="tab-contents">
+              <div class="tab-content">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.6416368565624!2d69.2459091755302!3d41.31665900038021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b40d847941d%3A0x5765a18b352df71e!2sTashkent%20City%20Park!5e0!3m2!1sen!2s!4v1706206339716!5m2!1sen!2s"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div class="tab-content">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.306276259833!2d69.24041027552938!3d41.30220030127569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b2d66241941%3A0x8373b4ca656bb3bf!2sMagic%20city!5e0!3m2!1sen!2s!4v1706206367269!5m2!1sen!2s"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div class="tab-content">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.586992288631!2d69.1991448833617!3d41.27432762905231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b3f93f4966f%3A0x46154ae9b74663fd!2sChilonzor%20Metro!5e0!3m2!1sen!2s!4v1706206402599!5m2!1sen!2s"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div class="tab-content">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.0728840437946!2d69.2012376755285!3d41.28551820230848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ba578f4f58d%3A0xd7a2ecf23413b7a0!2sNajot%20Ta&#39;lim%20Chilonzor%20Filial!5e0!3m2!1sen!2s!4v1706206427939!5m2!1sen!2s"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
           </div>
-          <div class="responsive-map-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1737.6221882978507!2d-98.48650795000005!3d29.421653200000023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c58aa57e6a56f%3A0xf08a9ad66f03e879!2sHenry+B.+Gonzalez+Convention+Center!5e0!3m2!1sen!2sus!4v1393884854786"
-              width="600"
-              height="450"
-              frameborder="0"
-              style="border: 0"
-            >
-            </iframe>
-          </div>
+
           <div class="headline">
             <div class="title">
               <h1>Статьи</h1>
@@ -552,7 +632,11 @@
       <div class="container">
         <div class="footer__links">
           <a href="" class="footer__logo">
-            <img src="./assets/images/footer.logo.png" alt="logo" />
+            <img
+              src="./assets/images/footer.logo-removebg-preview.png"
+              alt="logo"
+              class="logo"
+            />
             <a href="./pages/about.html">О компании</a>
             <a href="./pages/kontakt.html">Контакты</a>
             <a href="../pages/tovar.html">Вакансии</a>
@@ -586,6 +670,43 @@
         </div>
       </div>
     </footer>
+    <div class="header__bottom">
+      <div class="mainmenu">
+        <div class="mainmenu1">
+          <img
+            class="mainmenu-child"
+            alt=""
+            src="assets/images/hamburger.svg"
+          />
+          <div class="div"><a href="pages/category.html">Каталог</a></div>
+        </div>
+        <div class="mainmenu1">
+          <img class="mainmenu-child" alt="" src="assets/images/like.svg" />
+          <div class="div"><a href="pages/selected.html">Избранное</a></div>
+        </div>
+        <div class="mainmenu1">
+          <img class="mainmenu-child" alt="" src="assets/images/box.svg" />
+          <div class="div"><a href="pages/korzinka.html">Заказы</a></div>
+        </div>
+        <div class="mainmenu1">
+          <div class="mainmenu-child">
+            <img
+              class="feather-icon-shopping-cart"
+              alt=""
+              src="assets/images/shopping-cart.svg"
+            />
+            <div class="num">
+              <img class="icon" alt="" src="1.svg" />
+            </div>
+          </div>
+          <div class="div"><a href="pages/korzinka.html">Корзина</a></div>
+        </div>
+        <div class="avatar-wrapper">
+          <img class="avatar-icon" alt="" src="assets/images/avatar.svg" />
+        </div>
+      </div>
+    </div>
     <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
   </body>
 </html>

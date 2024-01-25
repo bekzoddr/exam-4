@@ -1,6 +1,7 @@
 @use "../layout/container";
 @use "../base/reset";
 @use "../global.scss";
+@use "../themes/loading.scss";
 .b {
     align-self: stretch;
     position: relative;

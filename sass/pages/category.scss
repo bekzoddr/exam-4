@@ -1,7 +1,8 @@
 @use "../layout/container";
 @use "../base/reset";
+@use "../themes/loading.scss";
 
-#navbar {
+#navbar, .responsive__header {
     width: 100vw;
     position: fixed;
     z-index: 10000;
@@ -20,7 +21,60 @@
             margin-left: 50px;
         }
     }
+.item {
+    align-self: stretch;
+    position: relative;
+    line-height: 150%;
+    transition: 0.5s;
+    cursor: pointer;
+}
 
+.item-parent {
+    width: 272px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+.dropdown-hidden {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.item:hover {
+    align-self: stretch;
+    position: relative;
+    line-height: 150%;
+    color: #ff6633;
+}
+
+#categoriess{
+    position: absolute;
+    top: 75px;
+}
+
+.frame-parent {
+    width: 100vw;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 40px 116px;
+    box-sizing: border-box;
+    gap: 40px;
+    text-align: left;
+    font-size: 16px;
+    color: #414141;
+    font-family: Rubik;
+}
     .catalog {
         display: flex;
         width: 140px;
@@ -28,14 +82,18 @@
         padding: 8px;
         justify-content: center;
         align-items: center;
-        gap: 8px;
+        // gap: 8px;
         border-radius: 4px;
         background: #70C05B;
         margin-left: 50px;
 
-        img {
+        button {
+            
             cursor: pointer;
-        }
+            background-color: transparent;
+            position: relative;
+            left:50px;
+                    }
 
         h1 {
             font-size: 22px;
@@ -153,6 +211,9 @@
     a {
         color: #414141;
     }
+}
+.responsive__header {
+    display: none;
 }
 .catalog {
     a {
@@ -370,7 +431,13 @@ footer {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-
+.responsive__header {
+    display: block;
+    width: 100vw;
+    display: flex;
+    // padding: 10px;
+    // padding-left: 50px;
+}
     .instance-parent {
         display: flex;
         flex-direction: column;
@@ -392,5 +459,33 @@ footer {
     .links {
         position: relative;
         left: 100px;
+}
+.footer {
+ background-size: 1500px;
+       }
+               
+.footer__links {
+ display: flex;
+ flex-direction: column;
+.footer___phone {
+ display: flex;
+ position: relative;
+ right: 340px;
+ top: 40px;
+    h4 {
+ width: 100vw;
+        }
+    }
+ .img__links {
+ display: flex;
+              }
+                }
+.footer__logo {
+ position: relative;
+ left: 60px;
+    &_logo {
+            position: relative;
+            right: 160px;
+        }
     }
 }

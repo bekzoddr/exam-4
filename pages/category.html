@@ -11,7 +11,25 @@
     />
   </head>
   <body>
+    <div class="loading">
+      <div class="loader">
+        <span>Loading...</span>
+      </div>
+    </div>
     <header>
+      <div class="responsive__header">
+        <a href="#" class="header__logo">
+          <img src="assets/images/logo.png" alt="logo" />
+        </a>
+        <div class="search__container">
+          <input
+            class="search__input"
+            id="searchInput"
+            type="text"
+            placeholder="Найти"
+          />
+        </div>
+      </div>
       <div class="container">
         <nav id="navbar">
           <ul class="nav__list">
@@ -19,28 +37,29 @@
               <img src="../assets/images/logo.png" alt="logo" />
             </a>
             <div class="catalog">
-              <a href="#"
-                ><img src="../assets/images/menu.svg" alt="menu" />
-                <h1>Каталог</h1></a
-              >
+              <button id="myButton">
+                <img src="../assets/images/menu.svg" alt="menu" />
+              </button>
+              <a class="katalog" href="category.html"> <h1>Каталог</h1> </a>
             </div>
             <div class="search__container">
               <input
                 class="search__input"
+                id="searchInput"
                 type="text"
                 placeholder="Найти товар"
               />
             </div>
             <div class="icons">
-              <a href="./pages/selected.html"
+              <a href="selected.html"
                 ><img src="../assets/images/like.svg" alt="icon" />
                 <p>Избранное</p></a
               >
-              <a href="./pages/products.html"
+              <a href="category.html"
                 ><img src="../assets/images/box.svg" alt="icon" />
                 <p>продукты</p></a
               >
-              <a href="./pages/korzinka.html"
+              <a href="korzinka.html"
                 ><img src="../assets/images/shopping-cart.svg" alt="icon" />
                 <p>Корзина</p></a
               >
@@ -56,6 +75,31 @@
             </div>
           </ul>
         </nav>
+      </div>
+      <div class="dropdown-hidden" id="categoriess">
+        <div class="frame-parent">
+          <div class="item-parent">
+            <b class="item">Молоко, сыр, яйцо</b>
+            <b class="item">Хлеб</b>
+            <b class="item">Фрукты и овощи</b>
+            <b class="item">Замороженные продукты</b>
+          </div>
+          <div class="item-parent">
+            <b class="item">Напитки</b>
+            <b class="item">Кондитерские изделия</b>
+            <b class="item">Чай, кофе</b>
+          </div>
+          <div class="item-parent">
+            <b class="item">Бакалея</b>
+            <b class="item">Здоровое питание</b>
+            <b class="item">Зоотовары</b>
+          </div>
+          <div class="item-parent">
+            <b class="item">Непродовольственные товары</b>
+            <b class="item">Детское питание</b>
+            <b class="item">Мясо, птица, колбаса</b>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -265,5 +309,7 @@
         </div>
       </div>
     </footer>
+    <script src="../js/main.js"></script>
+    <script src="../js/categories.js"></script>
   </body>
 </html>
