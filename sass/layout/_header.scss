@@ -1,5 +1,10 @@
 #navbar {
-    width: 100vw;
+    position: relative;
+    right: 0px;
+}
+#navbar,
+.responsive__header {
+    width: 1440px;
     position: fixed;
     z-index: 10000;
     background-color: #fff;
@@ -34,6 +39,10 @@
             cursor: pointer;
         }
 
+        button {
+            background-color: transparent;
+        }
+
         h1 {
             font-size: 22px;
             font-style: normal;
@@ -42,7 +51,9 @@
             color: white;
         }
     }
-
+.responsive__header{
+display: none;
+}
     .search__container {
         width: 360px;
         margin-left: 30px;
@@ -133,4 +144,95 @@
     .icon {
         cursor: pointer;
     }
+}
+.item {
+    align-self: stretch;
+    position: relative;
+    line-height: 150%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.item-parent {
+    width: 272px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+.dropdown-hidden {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.item:hover {
+    align-self: stretch;
+    position: relative;
+    line-height: 150%;
+    color: #ff6633;
+}
+
+#categoriess {
+    position: fixed;
+    z-index: 10000000;
+    top: 75px;
+}
+
+.frame-parent {
+    width: 100vw;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 40px 116px;
+    box-sizing: border-box;
+    gap: 40px;
+    text-align: left;
+    font-size: 16px;
+    color: #414141;
+    font-family: Rubik;
+}
+@media (max-width: 768px) {
+body {
+        overflow-x: hidden;
+    }
+
+    .mainmenu {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+
+
+    .search__container {
+        input {
+            padding: 20px;
+        }
+    }
+}
+
+        .responsive__header {
+            position: relative;
+
+            display: block;
+            width: 100vw;
+            display: flex;
+            // padding: 10px;
+            // padding-left: 50px;
+        }
+.mainmenu-child {
+    width: 24px;
+    position: relative;
+    height: 24px;
 }

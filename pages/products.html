@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRODUCTS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/products.min.css" />
+    <!-- <link rel="stylesheet" href="../css/global.min.css" /> -->
+  </head>
+  <body>
+    <a href="#" id="backtop"> < </a>
+    <header>
+      <div class="responsive__header">
+        <a href="#" class="header__logo">
+          <img src="../assets/images/logo.png" alt="logo" />
+        </a>
+        <div class="search__container">
+          <input
+            class="search__input"
+            id="searchInput"
+            type="text"
+            placeholder="Найти"
+          />
+        </div>
+      </div>
+      <div class="container">
+        <nav id="navbar">
+          <ul class="nav__list">
+            <a href="#" class="header__logo">
+              <img src="../assets/images/logo.png" alt="logo" />
+            </a>
+            <div class="catalog">
+              <button class="myButton" onclick="toggleDropdown()">
+                <img src="../assets/images/menu.svg" alt="menu" />
+              </button>
+              <a href="category.html"> <h1>Каталог</h1> </a>
+            </div>
+            <div class="search__container">
+              <input
+                class="search__input"
+                id="searchInput"
+                type="text"
+                placeholder="Найти товар"
+              />
+            </div>
+            <div class="icons">
+              <a href="selected.html"
+                ><img src="../assets/images/like.svg" alt="icon" />
+                <p>Избранное</p></a
+              >
+              <a href="category.html"
+                ><img src="../assets/images/box.svg" alt="icon" />
+                <p>продукты</p></a
+              >
+              <a href="korzinka.html"
+                ><img src="../assets/images/shopping-cart.svg" alt="icon" />
+                <p>Корзина</p></a
+              >
+            </div>
+            <div class="user">
+              <img src="../assets/images/avatar.svg" alt="logo" />
+              <h2>Алексей</h2>
+              <img
+                src="../assets/images/chevron-down.svg"
+                alt="icon"
+                class="icon"
+              />
+            </div>
+          </ul>
+        </nav>
+      </div>
+      <div class="dropdown-hidden" id="categoriess">
+        <div class="frame-parent">
+          <div class="item-parent">
+            <b class="item">Молоко, сыр, яйцо</b>
+            <b class="item">Хлеб</b>
+            <b class="item">Фрукты и овощи</b>
+            <b class="item">Замороженные продукты</b>
+          </div>
+          <div class="item-parent">
+            <b class="item">Напитки</b>
+            <b class="item">Кондитерские изделия</b>
+            <b class="item">Чай, кофе</b>
+          </div>
+          <div class="item-parent">
+            <b class="item">Бакалея</b>
+            <b class="item">Здоровое питание</b>
+            <b class="item">Зоотовары</b>
+          </div>
+          <div class="item-parent">
+            <b class="item">Непродовольственные товары</b>
+            <b class="item">Детское питание</b>
+            <b class="item">Мясо, птица, колбаса</b>
+          </div>
+        </div>
+        s
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <form action="">
+            <div class="input-group my-3">
+              <div>
+                <select class="form-select price-sort">
+                  <option value="initial">Initial</option>
+                  <option value="asc">Price (asc)</option>
+                  <option value="desc">Price (desc)</option>
+                </select>
+              </div>
+            </div>
+          </form>
+          <h3 class="alert alert-info">
+            Mahsulotlar soni: <span class="products-quantity"></span>
+          </h3>
+          <div class="row products-row"></div>
+        </div>
+        <ul class="pagination"></ul>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer__links">
+          <a href="" class="footer__logo">
+            <img
+              src="../assets/images/footer.logo-removebg-preview.png"
+              alt="logo"
+              class="logo"
+            />
+            <a href="./about.html">О компании</a>
+            <a href="./kontakt.html">Контакты</a>
+            <a href="../tovar.html">Вакансии</a>
+            <a href="./stati.html">Статьи</a>
+            <a href="./selected.html"
+              >Политика обработки персональных данных</a
+            >
+            <div class="img__links">
+              <a href="https://www.instagram.com/"
+                ><img src="../assets/images/instagram.svg" alt=""
+              /></a>
+              <a href="https://vk.com/"
+                ><img src="../assets/images/vkontakte.svg" alt=""
+              /></a>
+              <a href="https://www.facebook.com/"
+                ><img src="../assets/images/facebook.svg" alt=""
+              /></a>
+              <a href="https://ok.ru/"
+                ><img src="../assets/images/ok.svg" alt=""
+              /></a>
+              <div class="footer___phone">
+                <img src="../assets/images/phone.svg" alt="icon" class="phone" />
+                <h4>8 800 777 33 33</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="footer__logo">
+          <h4>Дизайн</h4>
+          <img src="../assets/images/footer.logo.svg" alt="logo" />
+        </div>
+      </div>
+    </footer>
+    <div class="header__bottom">
+      <div class="mainmenu">
+        <div class="mainmenu1">
+          <button id="myButton">
+            <img src="../assets/images/hamburger.svg" alt="menu" />
+          </button>
+          <div class="div"><a href="category.html">Каталог</a></div>
+        </div>
+        <div class="mainmenu1">
+          <a href="selected.html"
+            ><img class="mainmenu-child" alt="" src="../assets/images/like.svg" />
+            <div class="div">
+              <a href="selected.html">Избранное</a>
+            </div></a
+          >
+        </div>
+        <div class="mainmenu1">
+          <a href="korzinka.html"
+            ><img class="mainmenu-child" alt="" src="../assets/images/box.svg" />
+            <div class="div"><a href="korzinka.html">Заказы</a></div></a
+          >
+        </div>
+        <div class="mainmenu1">
+          <a href="korzinka.html">
+            <div class="mainmenu-child">
+              <img
+                class="feather-icon-shopping-cart"
+                alt=""
+                src="../assets/images/shopping-cart.svg"
+              />
+              <div class="num">
+                <img class="icon" alt="" src="1.svg" />
+              </div>
+            </div>
+            <div class="div"><a href="korzinka.html">Корзина</a></div></a
+          >
+        </div>
+        <div class="avatar-wrapper">
+          <img class="avatar-icon" alt="" src="../assets/images/avatar.svg" />
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/main.js"></script>
+
+    <script src="../js/products-data.js"></script>
+    <script src="../js/categories-data.js"></script>
+    <script src="../js/const.js"></script>
+    <script src="../js/products.js"></script>
+  </body>
+</html>
