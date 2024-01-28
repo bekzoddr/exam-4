@@ -1,6 +1,7 @@
 @use "../layout/header";
 @use "../base/reset";
 @use "../layout/footer";
+@use "../themes//loading";
 main{
 margin-top: 100px;
 }
