@@ -144,7 +144,9 @@ border:none;
 .cart-button.clicked .fa-box {
     animation: box 1.5s ease-in-out forwards;
 }
-
+.stars{
+margin-bottom: 15px;
+}
 .cart-button.clicked span.add-to-cart {
     animation: txt1 1.5s ease-in-out forwards;
 }
@@ -196,7 +198,9 @@ border:none;
         opacity: 0;
     }
 }
-
+.form-select{
+box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.10);
+}
 @keyframes txt2 {
 
     0%,
@@ -221,3 +225,11 @@ border:none;
   .liked {
       background: url('../../assets/images/heart_833472.png') no-repeat;
   }
+  
+
+  .alert {
+box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.10);
+background-color: #fff;
+border: none;
+color: black;
+}
